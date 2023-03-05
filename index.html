@@ -13,7 +13,16 @@
 <ul>
   <li><a href="https://unsplash.com/s/photos/goat">Beautiful Goats</a></li>
   
-  <button type="button" onclick="toggle_text();">This is my first website but I enjoyed doing it :)</button>
+<button type="button" onclick="toggle_text();">Click here to know another secret</button>
+  
+  function toggle_text() {
+  var span = document.getElementById("span_txt");
+  if(span.innerHTML != "") {
+    span.innerHTML = "";
+  } else {
+    span.innerHTML = "This is my first websit but I enjoyed doing it :)";
+  }
+}
 
 <p>This is my first website.</p>
 
