@@ -13,16 +13,13 @@
 <ul>
   <li><a href="https://unsplash.com/s/photos/goat">Beautiful Goats</a></li>
   
-<button type="button" onclick="toggle_text();">Click here to know another secret</button>
-  
-function toggle_text() {
-  var span = document.getElementById("span_txt");
-  if(span.innerHTML != "") {
-    span.innerHTML = "";
-  } else {
-    span.innerHTML = "This is my first websit but I enjoyed doing it :)";
-  }
+<h3 onclick="myFunction(this, 'red')">Click me to change my color.</h3>
+
+<script>
+function myFunction(element, color) {
+  element.style.color = color;
 }
+</script>
 
 <p>This is my first website.</p>
 
